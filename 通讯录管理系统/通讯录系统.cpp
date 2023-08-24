@@ -23,7 +23,7 @@ struct person {
 	string name;   //名字
 	int sex;    //性别 1男 2女
 	int age;       //年龄
-	int number;    //联系电话
+	string number;    //联系电话
 	string address;//家庭住址
 };
 
@@ -76,7 +76,7 @@ void addperson(addressbook* abs) {
 		abs->personarr[abs->size].age = age;
 		//号码
 		cout << "联系号码：";
-		int number;
+		string number;
 		cin >> number;
 		abs->personarr[abs->size].number = number;
 		//住址
@@ -253,7 +253,7 @@ void reviseperson(addressbook* abs) {
 		abs->personarr[i].age = age;
 		
 		cout << "联系号码：";
-		int number;
+		string number;
 		cin >> number;
 		abs->personarr[i].number = number;
 		
